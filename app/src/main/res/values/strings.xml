@@ -6,4 +6,10 @@
     <string name="messenger">messenger</string>
     <string name="Start">start</string>
     <string name="alarm_set">alarm_set</string>
+    <string name="sa">알람 설정</string>
+    <string name="ra">알람 해제</string>
+    <string name="ts">시간 설정</string>
+    <string name="_1">반복 알람 테스트(1분마다 알람)</string>
+    <string name="na">알람 해제</string>
+    <string name="_10">시간 변경(10초 후)/ 미구현</string>
 </resources>

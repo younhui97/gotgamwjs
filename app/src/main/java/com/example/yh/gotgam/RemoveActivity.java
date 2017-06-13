@@ -12,8 +12,6 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.yh.gotgam.R;
-
 public class RemoveActivity extends Activity {
 
     private Intent intent;
@@ -64,12 +62,11 @@ public class RemoveActivity extends Activity {
         intent = new Intent("AlarmReceiver");
         //PendingIntent.getBroadcast(Context context, int requestCod, Intent intent, int flag);
         ServicePending = PendingIntent.getBroadcast(
-                removeActivity.this, 111, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+                RemoveActivity.this, 111, intent, PendingIntent.FLAG_UPDATE_CURRENT);
         Log.d("ServicePending : ",""+ServicePending.toString());
 
         Toast.makeText(getBaseContext(), "알람 해제", Toast.LENGTH_SHORT).show();
 
         alarmManager.cancel(ServicePending);
     }
-}
 }

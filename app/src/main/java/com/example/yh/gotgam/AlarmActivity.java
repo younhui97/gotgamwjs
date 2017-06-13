@@ -1,5 +1,4 @@
 package com.example.yh.gotgam;
-
 import android.app.AlarmManager;
 import android.app.DatePickerDialog;
 import android.app.PendingIntent;
@@ -19,7 +18,7 @@ import android.widget.Toast;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-    public class AlarmActivity extends AppCompatActivity {
+public class AlarmActivity extends AppCompatActivity {
 
         //시간 설정을 위한 객체
         Calendar Time;
@@ -169,6 +168,5 @@ import java.util.Calendar;
             Toast.makeText(getBaseContext(), "알람 설정" + Time.getTime(), Toast.LENGTH_SHORT).show();
 
         }
-    }
-
 }
+
