@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">곧-감!</string>
+    <string name="abc">abc</string>
+    <string name="emergency">emergency</string>
+    <string name="nextactivity" />
+    <string name="messenger">messenger</string>
+    <string name="Start">start</string>
+    <string name="alarm_set">alarm_set</string>
+</resources>
