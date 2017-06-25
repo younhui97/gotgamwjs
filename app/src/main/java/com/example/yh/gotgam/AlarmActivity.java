@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.TimePicker;
 import android.widget.TimePicker.OnTimeChangedListener;
@@ -52,20 +53,19 @@ public class AlarmActivity extends Activity
 
         //셋 버튼, 리셋버튼의 리스너를 등록
         setContentView(R.layout.alarm);
-
-        /*Button b = (Button)findViewById(R.id.set);
+        Button b = (Button)findViewById(R.id.set);
         b.setOnClickListener (new View.OnClickListener() {
             public void onClick(View v) {
                 setAlarm();
             }
         });
-*/
-        /*b = (Button)findViewById(R.id.reset);
+
+        b = (Button)findViewById(R.id.reset);
         b.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 resetAlarm();
             }
-        });*/
+        });
 
         //일시 설정 클래스로 현재 시각을 설정
 //        mDate = (DatePicker)findViewById(R.id.date_picker);
@@ -74,12 +74,6 @@ public class AlarmActivity extends Activity
         mTime.setCurrentHour(mCalendar.get(Calendar.HOUR_OF_DAY));
         mTime.setCurrentMinute(mCalendar.get(Calendar.MINUTE));
         mTime.setOnTimeChangedListener(this);
-    }
-    public void onClick09(View v) {
-        setAlarm();
-    }
-    public void onClick10(View v) {
-        resetAlarm();
     }
 
     //알람의 설정
@@ -112,7 +106,7 @@ public class AlarmActivity extends Activity
 
     //알람의 설정 시각에 발생하는 인텐트 작성
     private PendingIntent pendingIntent() {
-        Intent i = new Intent(getApplicationContext(), AlarmActivity.class);
+        Intent i = new Intent(getApplicationContext(), MainActivity.class);
         PendingIntent pi = PendingIntent.getActivity(this, 0, i, 0);
         return pi;
     }
