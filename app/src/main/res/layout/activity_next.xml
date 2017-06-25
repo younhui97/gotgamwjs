@@ -13,8 +13,8 @@
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="onClick04"
-        android:text="@string/alarm_set" />
+        android:onClick="onClick05"
+        android:text="@string/alarm" />
 
     <TextView
         android:id="@+id/textView"
@@ -32,28 +32,18 @@
         tools:ignore="UnusedAttribute" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="결과창"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_weight="0.11" />
-
-    <TextView
         android:id="@+id/textView1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="GPS 에 수신된 현재위치"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_weight="0.06" />
+        android:text="@string/nextactivity" />
 
-    <ToggleButton
-        android:id="@+id/toggle1"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/button5"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="107dp"
         android:layout_height="wrap_content"
-        android:textOff="위치정보수신시작"
-        android:textOn="위치정보수신종료"
-        android:layout_weight="0.18" />
+        android:onClick="onClick04"
+        android:text="@string/map" />
 
 
 </LinearLayout>

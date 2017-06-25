@@ -12,4 +12,7 @@
     <string name="_1">반복 알람 테스트(1분마다 알람)</string>
     <string name="na">알람 해제</string>
     <string name="_10">시간 변경(10초 후)/ 미구현</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="map">Map</string>
+    <string name="alarm">Alarm</string>
 </resources>
