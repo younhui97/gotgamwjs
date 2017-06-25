@@ -14,4 +14,6 @@ public class NNextActivity extends Activity {
         setContentView(R.layout.activity_nnext);
 
     }
-}
+
+};
+
