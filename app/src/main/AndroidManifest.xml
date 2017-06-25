@@ -26,7 +26,7 @@
         <activity android:name=".NextActivity" />
         <activity android:name=".NNextActivity" />
         <activity android:name=".AlarmActivity" />
-
+        <receiver android:name="AlarmReceiver"> </receiver>
 
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.

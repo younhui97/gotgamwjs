@@ -16,4 +16,6 @@
     <string name="map">Map</string>
     <string name="alarm">Alarm</string>
     <string name="time_setting_completed">time setting completed</string>
+    <string name="set">set</string>
+    <string name="reset">reset</string>
 </resources>
