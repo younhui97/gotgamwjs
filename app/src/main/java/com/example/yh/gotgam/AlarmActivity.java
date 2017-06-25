@@ -106,7 +106,7 @@ public class AlarmActivity extends Activity
 
     //알람의 설정 시각에 발생하는 인텐트 작성
     private PendingIntent pendingIntent() {
-        Intent i = new Intent(getApplicationContext(), MainActivity.class);
+        Intent i = new Intent(getApplicationContext(), AlarmRing.class);
         PendingIntent pi = PendingIntent.getActivity(this, 0, i, 0);
         return pi;
     }
