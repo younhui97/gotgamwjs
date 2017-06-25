@@ -1,7 +1,7 @@
 package com.example.yh.gotgam;
 
-import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -28,10 +28,16 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-
         LatLng seoul = new LatLng( 37.56, 126.97 );
         mMap.addMarker( new MarkerOptions().position(seoul).title( "Marker in Seoul" ) );
         mMap.moveCamera( CameraUpdateFactory.newLatLng(seoul) );
+        /*ArrayList<String> gps = getIntent().getStringArrayListExtra("gps");
+        String s[]=(gps.get(0).split("/"));
+        boolean[] name = getIntent().getBooleanArrayExtra("name");
+        LatLng des= new LatLng(Double.parseDouble(s[1]),Double.parseDouble(s[2]));
+        mMap.addMarker(new MarkerOptions().position(des).title("arrival location"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(des,20));*/
+
     }
 
 

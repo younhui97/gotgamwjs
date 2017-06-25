@@ -25,6 +25,7 @@
         </activity>
         <activity android:name=".NextActivity" />
         <activity android:name=".NNextActivity" />
+        <activity android:name=".AlarmActivity" />
 
 
         <!--

@@ -21,11 +21,10 @@ public class MainActivity extends Activity {
         startActivity(intent);
     }
 
-    public void onClick03(View v)
-        {
-            Intent intent= new Intent(this, NextActivity.class);
-            startActivity(intent);
-        }
+    public void onClick03(View v) {
+        Intent intent = new Intent(this, NextActivity.class);
+        startActivity(intent);
+    }
 
 }
 

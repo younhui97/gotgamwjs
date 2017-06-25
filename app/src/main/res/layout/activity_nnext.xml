@@ -23,6 +23,7 @@
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="180dp"
         android:layout_height="wrap_content"
+        android:onClick="onClick08"
         android:text="@string/time_setting_completed" />
 
 </LinearLayout>
