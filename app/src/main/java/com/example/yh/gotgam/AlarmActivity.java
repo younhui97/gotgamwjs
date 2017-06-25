@@ -9,17 +9,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.TimePicker;
 import android.widget.TimePicker.OnTimeChangedListener;
-import android.widget.Toast;
 
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
 public class AlarmActivity extends Activity
-        implements OnTimeChangedListener {
+        implements OnTimeChangedListener{
     /*
      * 알람관련 맴버 변수
      */
@@ -54,19 +52,20 @@ public class AlarmActivity extends Activity
 
         //셋 버튼, 리셋버튼의 리스너를 등록
         setContentView(R.layout.alarm);
-        Button b = (Button)findViewById(R.id.set);
+
+        /*Button b = (Button)findViewById(R.id.set);
         b.setOnClickListener (new View.OnClickListener() {
-            public void onClick (View v) {
+            public void onClick(View v) {
                 setAlarm();
             }
         });
-
-        b = (Button)findViewById(R.id.reset);
+*/
+        /*b = (Button)findViewById(R.id.reset);
         b.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 resetAlarm();
             }
-        });
+        });*/
 
         //일시 설정 클래스로 현재 시각을 설정
 //        mDate = (DatePicker)findViewById(R.id.date_picker);
@@ -76,13 +75,22 @@ public class AlarmActivity extends Activity
         mTime.setCurrentMinute(mCalendar.get(Calendar.MINUTE));
         mTime.setOnTimeChangedListener(this);
     }
+    public void onClick09(View v) {
+        setAlarm();
+    }
+    public void onClick10(View v) {
+        resetAlarm();
+    }
 
     //알람의 설정
     private void setAlarm() {
         mManager.set(AlarmManager.RTC_WAKEUP, mCalendar.getTimeInMillis(), pendingIntent());
         Log.i("HelloAlarmActivity", mCalendar.getTime().toString());
+        mManager.set(AlarmManager.RTC_WAKEUP,mCalendar.getTimeInMillis(),pendingIntent());
+        Log.i("HelloAlarmActivity",mCalendar.getTime().toString());
+    }
 
-            if(nowTime >= mCalendar.getTimeInMillis()){
+           /* if(nowTime >= mCalendar.getTimeInMillis()){
                 Toast.makeText(AlarmActivity.this, "입력한 날짜는 현재 날짜보다 이전입니다.", Toast.LENGTH_SHORT).show();
                 return;
             }
@@ -95,7 +103,7 @@ public class AlarmActivity extends Activity
 
             Log.i("HelloAlarmActivity", mCalendar.getTime().toString());
 
-    }
+    }*/
 
     //알람의 해제
     private void resetAlarm() {
