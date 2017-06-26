@@ -8,19 +8,6 @@
     android:orientation="vertical"
     android:baselineAligned="false">
 
-    <Button
-        android:id="@+id/button4"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="onClick05"
-        android:text="@string/alarm" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/nextactivity" />
 
     <Button
         android:id="@+id/button3"
@@ -28,22 +15,42 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="onClick02"
-        android:text="@string/messenger"
-        tools:ignore="UnusedAttribute" />
+        android:text="@string/quick_messenger"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
+        tools:ignore="UnusedAttribute"
+        android:layout_weight="0.06" />
 
     <TextView
         android:id="@+id/textView1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/nextactivity" />
+        android:text="@string/nextactivity"
+        android:layout_weight="0.10" />
 
     <Button
         android:id="@+id/button5"
         style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="107dp"
+        android:layout_width="185dp"
         android:layout_height="wrap_content"
         android:onClick="onClick04"
-        android:text="@string/map" />
+        android:text="@string/where_am_i"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
+        android:layout_weight="0.06" />
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nextactivity"
+        android:layout_weight="0.08" />
 
+    <Button
+        android:id="@+id/button6"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:onClick="onClick08"
+        android:text="@string/alarm_setting"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
+        android:layout_weight="0.06" />
 </LinearLayout>

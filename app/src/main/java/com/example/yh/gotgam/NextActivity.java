@@ -16,9 +16,9 @@ public class NextActivity extends Activity {
         setContentView(R.layout.activity_next);
 
     }
-    public void onClick05(View v)
+    public void onClick08(View v)
     {
-        Intent intent1= new Intent(this, NNextActivity.class);
+        Intent intent1= new Intent(this, AlarmActivity.class);
         startActivity(intent1);
     }
 

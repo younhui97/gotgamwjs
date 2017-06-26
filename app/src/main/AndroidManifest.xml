@@ -24,7 +24,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".NextActivity" />
-        <activity android:name=".NNextActivity" />
         <activity android:name=".AlarmActivity" />
         <activity android:name=".AlarmRing" />
         <receiver android:name="AlarmReceiver"> </receiver>

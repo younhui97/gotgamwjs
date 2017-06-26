@@ -10,6 +10,13 @@
     android:baselineAligned="false">
 
 
+    <TextClock
+        android:id="@+id/textClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        tools:targetApi="jelly_bean_mr1" />
+
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="443dp"
@@ -18,13 +25,12 @@
         android:contentDescription="@string/abc"
         android:src="@drawable/gotgammoji" />
 
-    <TextClock
-        android:id="@+id/textClock"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        tools:targetApi="jelly_bean_mr1" />
 
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.03" />
 
     <Button
         android:id="@+id/button2"
@@ -34,13 +40,18 @@
         android:onClick="onClick03"
         android:text="@string/Start" />
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
     <Button
         android:id="@+id/button"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="118dp"
         android:layout_height="wrap_content"
         android:onClick="onClick01"
-        android:text="@string/emergency" />
+        android:text="@string/emergency_call" />
 
 
 

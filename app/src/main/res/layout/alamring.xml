@@ -3,14 +3,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center_horizontal|center_vertical"
     android:weightSum="1">
 
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.46" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -18,5 +13,20 @@
         android:layout_height="wrap_content"
         android:contentDescription="@string/abc"
         android:src="@drawable/ttgh" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.08" />
+
+    <Button
+        android:id="@+id/button4"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="59dp"
+        android:layout_weight="0.04"
+        android:onClick="onClick011"
+        android:text="@string/turn_off_the_alarm" />
 
 </LinearLayout>

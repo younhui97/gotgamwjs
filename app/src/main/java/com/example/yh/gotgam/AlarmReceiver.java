@@ -28,7 +28,7 @@ public class AlarmReceiver extends BroadcastReceiver {
 
                                   String statusBarTextID, String detailedTextID) {
 
-        Intent contentIntent = new Intent(context, NNextActivity.class);
+        Intent contentIntent = new Intent(context, NextActivity.class);
 
         PendingIntent theappIntent =
 
